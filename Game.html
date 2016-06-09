@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/pagetheme.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/gameinterface.css" media="screen">
+    <title>Fly Fly Little Bird</title>
+</head>
+
+<body>
+    <!--jumbotron-->
+    <div class="jumbotron">
+        <h1>B01502146</h1>
+        <p>The First Time Learning to Make Webpage by HTML CSS JAVASCRIPT</p>
+        <!--navigation bar-->
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">HOME</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="Game.html">Game</a></li>
+                    <li><a href="References.html">References</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--game part-->
+    <div id="window">
+        <div id="block1" class="block"></div>
+        <div id="block2" class="block"></div>
+        <div id="bird"></div>
+        <div id="endBlock" class="transparentBG">GAME OVER</div>
+        <br>
+        <button class="button" id="rstrt_btn">RESTART</button>
+        <div id="name">Fly Fly Little Bird</div>
+        <br>
+        <button id="bgmCtrl">Audio <span id="ONorOFF">On</span></button>
+        <br>
+        <button class ="button" id="start_btn">START</button>       
+    </div>
+    <div id="scoreDiv">
+        <p><b>Score: </b><span id="score">0</span></p>
+        <p><b>Speed: </b><span id="speed">10</span></p>
+    </div>
+    <!--jQuery plugins and gameFunction js-->
+    <script type="text/javascript" src="javascript/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="javascript/gameFunction.js"></script>
+    <!--audio files-->
+    <audio autoplay loop id="bgm" src="Green Hills shorten.wav"></audio>
+    <audio id="fail" src="335906__littlerainyseasons__fail.mp3"></audio>
+</body>
+
+
+</html>

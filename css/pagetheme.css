@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    width: 100%;
+}
+
+.jumbotron {
+    height: 600px;
+    text-align: left;
+    padding-top: 380px;
+    margin-bottom: 100px;
+    background: url('jumboBG.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.navbar-brand, .navbar-nav > li > a {
+    color: white;
+    height: 50px;
+}
+
+.navbar-brand:hover, .navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+    color: white;
+    background: transparent;
+    border-bottom: 2px solid aquamarine;
+}
+
+.navbar-brand:focus, .navbar-nav > li > a:focus {
+  color: navy;
+}
+
